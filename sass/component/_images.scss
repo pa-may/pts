@@ -1,0 +1,31 @@
+.training-dog-img {
+    // background-image: linear-gradient(to right, white, transparent),
+        // url('../../img/security-dog-guard-1024x585.jpg');
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+}
+.background-img {
+    background-size: cover;
+    padding: 5rem 5rem;
+    box-shadow: var(--box-shadow-light);
+    color: black;
+    background-color: floralwhite;
+    
+    @include response(phone) {
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.security-dog-img {
+    background-image: linear-gradient(
+        to right,
+        rgba(20, 19, 19, 0.925) 25%,
+        transparent
+      ),
+      url("../img/bg-security.jpeg");
+    background-repeat: no-repeat;
+    height: 100rem;
+  }

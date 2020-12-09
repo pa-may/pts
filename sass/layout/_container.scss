@@ -1,0 +1,47 @@
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+    background-color: var(--Grey-light-1);
+    min-height: 50rem;
+
+    @media only screen and (max-width: 750px) {
+        width: 100rem;
+    }
+}
+.content {
+    display: flex;
+    @include response(tab) {
+        flex-direction: column;
+    }
+}
+.sidebar {
+    flex: 0 0 18%;
+    background-color: $Red;
+    background-color: var(--Red);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem;
+    // border-right: 3px solid rgb(112, 7, 7);
+    // @include response(tab) {
+    //     border: none;
+    //     flex-wrap: wrap;
+    // }
+    @include manual(505px) {
+        display: none;
+    }
+}
+.mobile {
+    display: none;
+    background-color: $Primary-light;
+    background-color: var(--Primary-light);
+    @include manual(505px) {
+        display: flex;
+        padding: 1rem;
+    }
+}
+.pts-view {
+    flex: 1;
+    background-color: fff;
+}

@@ -1,0 +1,25 @@
+//////////////////////////////////////
+// LOGO
+.logo {
+    height: 14rem;
+    margin-right: 2rem;
+    
+    @media only screen and (max-width: 375px) {
+        margin-top: 2rem;
+    }
+    
+    
+    &__heading {
+            /* margin: 0 0 1rem 0; */
+    text-transform: uppercase;
+    color: var(--Grey-light-1);
+    letter-spacing: .75rem;
+    /* transform: scaleY(1.75); */
+    font-size: 4.5rem;
+    padding: 0rem;
+
+    @media only screen and (max-width: 375px) {
+        font-size: 6rem;;
+    }
+    }
+}

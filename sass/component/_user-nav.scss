@@ -1,0 +1,46 @@
+//////////////////////////////////////
+// USER NAVIGATION
+
+.user-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: stretch;
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &:hover {
+            background-color: var(--Grey-light-3);
+        }
+    }
+    &__icon-box {
+        position: relative;
+    }
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: var(--Grey-dark-2)
+    }
+    &__notification {
+        background-color: var(--Primary);
+        border-radius: 50%;
+        height: 1.75rem;
+        width: 1.75rem;
+        font-size: .8rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+    }
+    &__user-photo {
+        height: 3.75rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+}

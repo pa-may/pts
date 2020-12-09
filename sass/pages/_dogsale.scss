@@ -1,0 +1,59 @@
+.breed {
+    &__image {
+    align-self: center;
+    order: -1;
+    margin-right: 5rem;
+    flex: 0 0 22%;
+    }
+    &__info{ font-size: 1.5rem; 
+        @include response(phone) {
+        font-size: 2.5rem;}
+   
+ }
+       
+    
+    &__text { 
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.1rem;
+
+        @include response(phone) {
+           font-size: 2.5rem;
+    }
+    }
+}
+
+.dog {
+    &__list {
+        display: flex;
+        /* border-top: #9b0000 1px solid; */
+        border-bottom: #9b0000 1px solid;
+        padding: 2rem;
+        display: flex;
+        &-text { flex: 0 0 80%; }
+
+        @include response(phone) {
+            flex-direction: column;
+            padding: 5rem 12rem;
+        }
+    }
+    &__image-list {
+        width: 100%;
+        // border-radius: 0.5rem;
+    }
+}
+.dog__list:last-child{
+    border:none;
+}
+
+
+
+.sold {
+    position: relative;
+    color: rgb(241, 10, 10);
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    top: -1rem;
+  }
+  

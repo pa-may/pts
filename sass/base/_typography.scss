@@ -1,0 +1,159 @@
+body {
+   
+    font-size: 1.6rem;
+    // font-weight: 400;
+    line-height: 1.8;
+    color: $Grey-dark-2;
+    color: var(--Grey-dark-2);
+    font-family: "Catamaran", "Open Sans", "Oxygen", "Questrial", sans-serif;
+}
+.header {
+    background-color: $Sand-Light;
+    background-color: var(--Sand-Light);
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    @include manual(514px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.paragraph {
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+}
+.text {
+color: whitesmoke;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    // &:not(:last-child) {
+    //     margin-bottom: 4rem;
+    // }
+
+    @media only screen and (max-width: 375px) {
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+}
+.sub-heading {
+    color: whitesmoke;
+    font-size: 3.5rem;
+    line-height: 10rem;
+    font-weight: 700;
+    align-self: flex-start;
+    width: 100%;
+    background-color: #0f0f11;
+    padding: 2rem 5rem;
+}
+
+.sub-heading-two {
+    font-size: 3.5rem;
+    line-height: 10rem;
+    font-weight: 700;
+    align-self: flex-start;
+    color: black;
+}
+.ter-heading {
+    font-size: 3rem;
+    line-height: 10rem;
+    font-weight: 600;
+    color: whitesmoke;
+    text-align: left;
+    width: 100%;
+
+
+}
+.secondary-heading {
+    font-size: 1.8rem;
+   
+    @media only screen and (max-width: 375px) {
+        font-size: 2.8rem;
+        line-height: normal;  }
+    
+}
+
+
+.heading {
+    &__text {
+       
+        
+        @include manual(514px) {
+            padding-left: 0;
+        }
+    }
+    &__slogan {
+        color: whitesmoke;
+        font-size: 1.8rem;
+        text-align: center;
+
+        @media only screen and (max-width: 375px) {
+            font-size: 3rem;
+        }
+        @media only screen and (max-width: 505px) {
+            font-size: 3rem;
+        }
+    }
+    
+}
+.header__style {
+    margin: 1.5rem 0;
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    &--shade {
+        color: rgb(59, 58, 58);
+        font-weight: 300;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+    color: black;
+    padding: 3rem;
+    margin: 0;    
+}
+
+.testomonies-headline{
+    
+    background-color: floralwhite;}
+
+p{
+    color: black;
+    @media only screen and (max-width: 375px) {
+        font-size: 3rem;
+    }
+}
+
+.disclaimer{
+    
+    padding: 2rem;
+    color: red;
+
+    @media only (max-width:375px){
+    font-size:2.5rem;
+    padding:2.5rem;
+
+}
+}
+
+.question{
+    font-size: 3rem;
+    font-weight: 700;
+    color: floralwhite;
+    margin-bottom: 3rem;
+}
+
+.answer{
+    font-size: 2rem;
+    font-weight: 400;
+    color: floralwhite;
+    margin-bottom: 3rem;
+}

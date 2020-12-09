@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    @include response(big) { font-size: 75%; }
+    @include response(tab-land) { font-size: 50%; }
+    @include response(tab) { font-size: 50%; }
+    @include response(phone) { font-size: 45.75%; }  font-size: 62.5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Catamaran", "Open Sans", "Oxygen", "Questrial", sans-serif;
+}
+
+body {
+    background-color: --Primary;
+    background-color: #0E0E10;
+    min-height: 100vh;
+    
+}

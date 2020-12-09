@@ -1,0 +1,17 @@
+.u-margin-left {
+    &-medium- { margin-left: -3rem !important; }
+    &-medium { margin-left: 3rem !important; }
+}
+.u-margin-right {
+    &-medium- { margin-right: -3rem !important; }
+    &-medium { margin-right: 3rem !important; }
+}
+.u-margin-top {
+    &-medium- { margin-top: -3rem !important; }
+    &-medium { margin-top: 3rem !important; }
+}
+.primary {
+    
+    color: $Primary;
+    color: var(--Primary);
+}

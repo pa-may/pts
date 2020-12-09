@@ -1,0 +1,29 @@
+.show { white-space: nowrap; }
+.checkbox { display: none; }
+.hidden, .hide { display: none; }
+#checkbox {
+    &--1:checked ~ .hidden--1 { display: inline; }
+    &--1:checked ~ .hide--1 { display: inline; }
+    &--1:checked ~ .extension--1 { display: none; }
+    &--1:checked ~ .show--1 { display: none; }
+    &--2:checked ~ .hidden--2 { display: inline; }
+    &--2:checked ~ .hide--2 { display: inline; }
+    &--2:checked ~ .extension--2 { display: none; }
+    &--2:checked ~ .show--2 { display: none; }
+    &--3:checked ~ .hidden--3 { display: inline; }
+    &--3:checked ~ .hide--3 { display: inline; }
+    &--3:checked ~ .extension--3 { display: none; }
+    &--3:checked ~ .show--3 { display: none; }
+    &--4:checked ~ .hidden--4 { display: inline; }
+    &--4:checked ~ .hide--4 { display: inline; }
+    &--4:checked ~ .extension--4 { display: none; }
+    &--4:checked ~ .show--4 { display: none; }
+    &--5:checked ~ .hidden--5 { display: inline; }
+    &--5:checked ~ .hide--5 { display: inline; }
+    &--5:checked ~ .extension--5 { display: none; }
+    &--5:checked ~ .show--5 { display: none; }
+    &--6:checked ~ .hidden--6 { display: inline; }
+    &--6:checked ~ .hide--6 { display: inline; }
+    &--6:checked ~ .extension--6 { display: none; }
+    &--6:checked ~ .show--6 { display: none; }
+}
